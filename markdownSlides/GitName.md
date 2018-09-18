@@ -1,17 +1,17 @@
 ### Why is Git called Git?
 
--   Linus Torvalds who created Linux also created Git
--   Linux = 'Linus' + 'Unix' ( literally named it after himself )
--   In his self deprecating humour would call himself a git
--   And so Git is also named after him
+-   Linus Torvalds who created Linux needed a version control system
+-   Couldn't find one good enough so he decided to build one
+-   He would always, in a self confessed egotistical manner, name projects after himself
+-   Such as Linux = 'Linus' + 'Unix' ( literally named it after himself )
+-   And inline with his self deprecating humour he decided to name this version control system 'Git'
 
 ### Git(?!Hub)
 
--   Don't confuse Git and GitHub ( When I first started I didn't really know the difference)
+-   Don't confuse Git and GitHub ( When I first started I didn't really know the difference )
 -   They are not the same thing
--   Don't worry about GitHub for now, I may explain it later
--   But in this we are focussing on Git
+-   We will be using GitHub to facilitate this tutorial, however we could have just as easily similar tools such as bitbucket
+-   In this the focus is Git
 
 | [Next](Problem.md) | [Home](index.md) |
 | ------------------ | ---------------- |
-

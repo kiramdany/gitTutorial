@@ -1,8 +1,13 @@
 ## People Directory
 
--   Will post helpful information in slack
+-   Will post helpful information in [gitter](https://gitter.im/cliTutorialNotes/Lobby)
 -   I encourage you to ask questions in there as well
--   Anything with grey background can be run from the "Terminal" or "iTerm" application
+-   You have the choice to follow the practical using either the Command Line or a GUI program ( GitHub Desktop )
+-   The images will be screenshots of the relevant action in GitHub Desktop
+-   Anything with grey background can be run from the "Terminal" application
+-   If you get stuck with the command line and want to switch to using the GUI,
+    -   `open .` to view your files in finder
+    -   `github .` to use GitHub Desktop
 
 ### Initial Setup
 
@@ -14,16 +19,14 @@ git config --global user.email "your.name@ynap.com"
 git config --global user.name "Your Name"
 ```
 
-Example of why ...
+![Configure git](img/GitHubConfigureGit.png)
 
-http://stash.vm.wtf.nap:7990/projects/MRP/repos/mrp-productlist/commits?until=refs%2Fheads%2FISP-642
-
-You'll see that I used a different email locally (my personal email) but when merging in stuff Stash wrote the commit with the email I was logged in with (work email)
-Using the same email as is on stash/github allows it to link to your profile and include your avatar pic
+Install the command line tool for GitHub Desktop ( regardless if you'll be using it now )
+![Command Line Tool for GitHub Desktop](img/InstallGitHubCliTool.png)
 
 ### Getting Started
 
-Copy my code from Stash
+Copy my code from GitHub
 
 #### How?
 
@@ -33,6 +36,9 @@ git clone {repo url}
 
 Remember to go into this new folder that you have copied ( git unfortunately doesn't do that for you )
 
+![git clone](img/CloneRepo.png)
+![git clone deets](img/CloneRepoDeets.png)
+
 #### And then?
 
 Switch to a new branch
@@ -41,38 +47,28 @@ Switch to a new branch
 git checkout -b {your name}
 ```
 
-### HTML Templates
+![git branch](img/GitBranch.png)
+![git branch deets](img/GitBranchDeets.png)
 
-Find a html template that you like on the website below
+### Markdown
 
--   https://freebiesbug.com/code-stuff/html-website-templates/
+We're going to use markdown to quickly create a bio pages for ourselves
 
-I have chosen a few, if you want to try one of the following
+Markdown is a quick and basic way to format text that can create webpages.
 
--   https://freebiesbug.com/code-stuff/bicycle-flat-html5-css3-template/
--   https://freebiesbug.com/code-stuff/nevada-html-template/
--   https://freebiesbug.com/code-stuff/oak-html-portfolio-template/
--   https://freebiesbug.com/code-stuff/bodo-free-html-personal-portfolio-template/
--   https://freebiesbug.com/code-stuff/resume-template-psd-html/
--   https://freebiesbug.com/code-stuff/elegant-free-html-psd-portfolio-template/
--   https://tympanus.net/codrops/2013/02/26/elastic-content-slider/
--   https://tympanus.net/codrops/2013/07/18/on-scroll-effect-layout/
+-   These tutorial notes for example are written in markdown for example
+-   Standard things such as different size titles, lists, tables, images, code formatting is supported
+-   Quick reference to syntax [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+-   Markdown files end with `.md`
+-   Can view on google chrome using the markdown viewer extension `open -a "Google Chrome" {filename}`
 
-#### Download
+Remember that the point is to practice git not to learn markdown or to make these pages look pretty, so don't worry too much about that part
 
--   Download the files of the template you like
--   Make a folder named with your first name in the project
--   Copy all the files from the download into your folder
--   Should look like something below
+#### Create Bio Page
 
-![](img/htmlTemplateStructure.png)
-These are the files from inside the downloaded template
-
-#### Edit the index.html file and fill in your details
-
--   This could be different depending on how the files are structured
--   View the template in Chrome and search for the text you see on screen in the code. That will point you in the right direction
--   And of course do ask for help if stuck
+-   Make a new file naming it `{your-name}.md`
+-   Add some basic information
+-   You're welcome to include a picture as well
 
 ### Share your changes
 
@@ -88,8 +84,36 @@ git branch --set-upstream-to origin/{branchName}
 git push
 ```
 
+![git add and commit](img/GitAddCommit.png)
+
+![git push](img/GitPush.png)
+
 Create Pull Request
+
+![Go to remote](img/GotoRemote.png)
+
+### Link to your Bio
+
+Edit the `README.md` file and add a link to your bio page
+
+Again any time you start new file create a new branch off `master`
+
+However you may find that your bio page disappears when you do This
+
+Check out the section below
+
+### Update your copy with changes from the remote
+
+When your Pull Request is merged this change only happens on the remote copy of the repository
+
+Now that the files on the `master` branch in GitHub have been updated we'll need to get a copy of those changes locally
+
+```
+git checkout master
+git pull
+```
+
+and now you can create a new branch off master to add the link to your bio page in the `README.md` file
 
 | [Next](nextSteps.md) | [Home](index.md) |
 | -------------------- | ---------------- |
-
