@@ -1,5 +1,4 @@
-## Prerequisites
-
+## Prerequisites
 -   [Github account](https://github.com/)
 -   Admin privileges on computer ( to download [apps](#Apps) in sections below )
 
