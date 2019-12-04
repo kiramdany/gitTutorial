@@ -1,4 +1,4 @@
-## Solution
+## Solution
 This is where Git comes in
 
 ### Versioning
