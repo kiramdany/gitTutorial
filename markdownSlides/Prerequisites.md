@@ -14,7 +14,7 @@ Anything with grey background can be run from the "Terminal" application
 -   GitHub Desktop : `brew cask install github`
 -   Google Chrome : `brew cask install "google chrome"`
 
-### Chrome Markdown Extension
+### Chrome Markdown Extension
 
 Open Google and add this [markdown viewer extension](https://chrome.google.com/webstore/detail/markdown-viewer/ckkdlimhmcjmikdlpkmbgfkaikojcbjk)
 
